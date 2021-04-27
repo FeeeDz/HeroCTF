@@ -100,6 +100,7 @@ int main()
 
 }
 ```
+Security:
 ```bash
 checksec WinButTwisted
 [*] '/home/kali/Desktop/CTF/HeroCTF/pwn/WinButTwisted'
@@ -109,3 +110,10 @@ checksec WinButTwisted
     NX:       NX enabled
     PIE:      No PIE (0x8048000)
 ```
+Uhhm it seems crashed.. 
+```bash
+./WinButTwisted       
+What would a hero say ?
+>>> AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+zsh: segmentation fault  ./WinButTwisted
+```bash
