@@ -183,4 +183,4 @@ so at this point we can get the flag
 Now what we need is the address of the set_lock() function and that of shell()
 
 the payload will be structured as follows:
-Payload = PADDING + set_lock()_address + shell()_address
+> Payload = PADDING + set_lock()_address + shell()_address
