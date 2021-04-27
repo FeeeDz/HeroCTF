@@ -180,3 +180,7 @@ Now we have the ingredients to calculate the offset
 Analyzing the C code we can see that we have an input with the fgets(), we can take advantage of this function to jump to the set_lock() function that will set the global variable UNLOCKED to 1, this operation will then allow us to jump to the shell() function, the condition if (UNLOCKED == 1) will then be true and we will have a shell opened by the command system("/bin/sh");
 so at this point we can get the flag
 
+Now what we need is the address of the set_lock() function and that of shell()
+
+the payload will be structured as follows:
+Payload = PADDING + set_lock()_address + shell()_address
