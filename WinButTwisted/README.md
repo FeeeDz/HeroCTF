@@ -132,4 +132,33 @@ What would a hero say ?
 
 Program received signal SIGSEGV, Segmentation fault.
 0x31624130 in ?? ()
+──────────────────────────────────────────────────────────────────────────────────── registers ────
+$eax   : 0x31624130 ("0Ab1"?)
+$ebx   : 0x080e9000  →  0x00000000
+$ecx   : 0x080ecde9  →  0x00000000
+$edx   : 0xfbad0088
+$esp   : 0xffffd0bc  →  0x08049add  →  <main+118> mov eax, DWORD PTR [ebp-0xc]
+$ebp   : 0xffffd0f8  →  0x00000800
+$esi   : 0x080e900c  →  0x0806d190  →  <__strcpy_ssse3+0> endbr32 
+$edi   : 0x0804823c  →  0x00000000
+$eip   : 0x31624130 ("0Ab1"?)
+$eflags: [zero carry PARITY adjust SIGN trap INTERRUPT direction overflow RESUME virtualx86 identification]
+$cs: 0x0023 $ss: 0x002b $ds: 0x002b $es: 0x002b $fs: 0x0000 $gs: 0x0063 
+──────────────────────────────────────────────────────────────────────────────────────── stack ────
+0xffffd0bc│+0x0000: 0x08049add  →  <main+118> mov eax, DWORD PTR [ebp-0xc]       ← $esp
+0xffffd0c0│+0x0004: 0x080e9094  →  0x080ea8c0  →  0x00000000
+0xffffd0c4│+0x0008: 0x00000000
+0xffffd0c8│+0x000c: "Aa0Aa1Aa2Aa3Aa4Aa5Aa6Aa7Aa8Aa9Ab0Ab1Ab2A\n"
+0xffffd0cc│+0x0010: "a1Aa2Aa3Aa4Aa5Aa6Aa7Aa8Aa9Ab0Ab1Ab2A\n"
+0xffffd0d0│+0x0014: "2Aa3Aa4Aa5Aa6Aa7Aa8Aa9Ab0Ab1Ab2A\n"
+0xffffd0d4│+0x0018: "Aa4Aa5Aa6Aa7Aa8Aa9Ab0Ab1Ab2A\n"
+0xffffd0d8│+0x001c: "a5Aa6Aa7Aa8Aa9Ab0Ab1Ab2A\n"
+────────────────────────────────────────────────────────────────────────────────── code:x86:32 ────
+[!] Cannot disassemble from $PC
+[!] Cannot access memory at address 0x31624130
+────────────────────────────────────────────────────────────────────────────────────── threads ────
+[#0] Id 1, Name: "WinButTwisted", stopped 0x31624130 in ?? (), reason: SIGSEGV
+──────────────────────────────────────────────────────────────────────────────────────── trace ────
+───────────────────────────────────────────────────────────────────────────────────────────────────
+gef➤  
 ```
