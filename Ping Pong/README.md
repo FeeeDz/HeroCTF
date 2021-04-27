@@ -42,3 +42,7 @@ Now is time to convert the binary into a ASCII to read the flag.
 I used an online ascii converter, this is the result
 
 > Hero{p1n6_p0n6_15_fun}
+
+Writeup written by FeeeDz from STNKS team
+
+
