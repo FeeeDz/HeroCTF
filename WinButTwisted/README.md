@@ -162,3 +162,7 @@ $cs: 0x0023 $ss: 0x002b $ds: 0x002b $es: 0x002b $fs: 0x0000 $gs: 0x0063
 ───────────────────────────────────────────────────────────────────────────────────────────────────
 gef➤  
 ```
+Here we can see that our EIP register is has been overwritten by the pattern 
+```gdb
+$eip   : 0x31624130 ("0Ab1"?) 
+```
