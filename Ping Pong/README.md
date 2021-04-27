@@ -23,7 +23,7 @@ The idea is to convert the text in binary language.
 So I started to replace PONG to 0 and PING to 1 by writing this easy script to obtain a binary string.
 
 ```Python3
-f = open("out.txt",'r')
+f = open("output.txt",'r')
 binary=''
 for i in range(0,176):
     linea = f.readline()
