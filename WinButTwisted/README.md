@@ -100,6 +100,10 @@ int main()
 
 }
 ```
+```
+file WinButTwisted
+WinButTwisted: ELF 32-bit LSB executable, Intel 80386, version 1 (GNU/Linux), statically linked, BuildID[sha1]=30d5731a2385816deab25ce8684e2de08b24846f, for GNU/Linux 4.4.0, not stripped
+```
 Security:
 ```bash
 checksec WinButTwisted
