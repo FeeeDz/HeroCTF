@@ -141,7 +141,7 @@ $esp   : 0xffffd0bc  →  0x08049add  →  <main+118> mov eax, DWORD PTR [ebp-0x
 $ebp   : 0xffffd0f8  →  0x00000800
 $esi   : 0x080e900c  →  0x0806d190  →  <__strcpy_ssse3+0> endbr32 
 $edi   : 0x0804823c  →  0x00000000
-$eip   : 0x31624130 ("0Ab1"?)
+$eip   : 0x31624130 ("0Ab1"?) 
 $eflags: [zero carry PARITY adjust SIGN trap INTERRUPT direction overflow RESUME virtualx86 identification]
 $cs: 0x0023 $ss: 0x002b $ds: 0x002b $es: 0x002b $fs: 0x0000 $gs: 0x0063 
 ──────────────────────────────────────────────────────────────────────────────────────── stack ────
